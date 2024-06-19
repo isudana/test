@@ -1,0 +1,85 @@
+name: Customer Request
+description: Use this form to submit customer requests.
+title: "[Customer Request] <Provide a brief summary>"
+labels: ["Customer/*"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Customer Request Form
+
+  - type: input
+    id: customer_prospect_name
+    attributes:
+      label: Customer/Prospect Name
+      description: Name of the customer or prospect.
+      placeholder: "Enter the customer's or prospect's name"
+      required: true
+
+  - type: textarea
+    id: business_problem
+    attributes:
+      label: Customer's Business Problem
+      description: Describe the business problem the customer is facing. You can also attach diagrams by dragging and dropping image files after submitting the issue.
+      placeholder: "Describe the business problem and add any relevant diagrams"
+      required: true
+
+  - type: dropdown
+    id: product
+    attributes:
+      label: Product
+      description: Select the product involved.
+      options:
+        - MI
+        - Ballerina
+        - Eggplant
+        - ICP
+      required: true
+
+  - type: input
+    id: product_version
+    attributes:
+      label: Product Version
+      description: Specify the version of the product.
+      placeholder: "Enter the product version"
+      required: true
+
+  - type: input
+    id: urgency
+    attributes:
+      label: Urgency
+      description: Indicate the urgency of the requirement.
+      placeholder: "Enter the urgency"
+      required: true
+
+  - type: textarea
+    id: impact_on_business
+    attributes:
+      label: Impact on Business
+      description: Describe the impact on the business.
+      placeholder: "Describe the impact on business"
+      required: true
+
+  - type: input
+    id: expected_timeline
+    attributes:
+      label: Expected Timeline
+      description: Indicate the expected timeline for resolution.
+      placeholder: "Enter the expected timeline"
+      required: true
+
+  - type: textarea
+    id: customer_details
+    attributes:
+      label: Customer Details (Optional)
+      description: Provide any additional details about the customer.
+      placeholder: "Enter any additional customer details"
+      required: false
+
+  - type: textarea
+    id: other_info
+    attributes:
+      label: Any Other Related Info (Optional)
+      description: Provide any other related information.
+      placeholder: "Enter any other related information"
+      required: false

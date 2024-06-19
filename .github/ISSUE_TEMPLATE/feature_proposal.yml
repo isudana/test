@@ -1,0 +1,75 @@
+name: Feature Proposal
+description: Use this form to submit your feature proposals.
+title: "[Feature Proposal] <Provide a brief summary>"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Feature Proposal Form
+
+  - type: textarea
+    id: business_problem
+    attributes:
+      label: Business Problem
+      description: Describe the business problem that needs to be solved. You can also attach diagrams by dragging and dropping image files after submitting the issue.
+      placeholder: "Describe the business problem and add any relevant diagrams"
+    validations: 
+      required: true
+
+  - type: dropdown
+    id: product
+    attributes:
+      label: Product
+      description: Select the product involved.
+      options:
+        - MI
+        - Ballerina
+        - Eggplant
+        - ICP
+    validations:
+      required: true
+
+  - type: input
+    id: product_version
+    attributes:
+      label: Product Version
+      description: Specify the version of the product.
+      placeholder: "Enter the product version"
+    validations:
+      required: true
+
+  - type: input
+    id: urgency
+    attributes:
+      label: Urgency
+      description: Indicate the urgency of the requirement.
+      placeholder: "Enter the urgency"
+    validations:  
+      required: true
+
+  - type: input
+    id: expected_timeline
+    attributes:
+      label: Expected Timeline
+      description: Indicate the expected timeline for resolution.
+      placeholder: "Enter the expected timeline"
+    validations:  
+      required: true
+
+  - type: textarea
+    id: associated_customer
+    attributes:
+      label: Associated Customers (if any) Details (Optional)
+      description: Provide details of associated customers.
+      placeholder: "Enter details of associated customers (if any)"
+    validations:  
+      required: false
+
+  - type: textarea
+    id: other_info
+    attributes:
+      label: Any Other Related Info (Optional)
+      description: Provide any other related information.
+      placeholder: "Enter any other related information"
+    validations:  
+      required: false

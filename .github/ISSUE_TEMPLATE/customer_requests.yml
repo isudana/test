@@ -14,6 +14,7 @@ body:
       label: Customer/Prospect Name
       description: Name of the customer or prospect.
       placeholder: "Enter the customer's or prospect's name"
+    validations:  
       required: true
 
   - type: textarea
@@ -22,6 +23,7 @@ body:
       label: Customer's Business Problem
       description: Describe the business problem the customer is facing. You can also attach diagrams by dragging and dropping image files after submitting the issue.
       placeholder: "Describe the business problem and add any relevant diagrams"
+    validations: 
       required: true
 
   - type: dropdown
@@ -34,6 +36,7 @@ body:
         - Ballerina
         - Eggplant
         - ICP
+    validations:
       required: true
 
   - type: input
@@ -42,6 +45,7 @@ body:
       label: Product Version
       description: Specify the version of the product.
       placeholder: "Enter the product version"
+    validations:
       required: true
 
   - type: input
@@ -50,6 +54,7 @@ body:
       label: Urgency
       description: Indicate the urgency of the requirement.
       placeholder: "Enter the urgency"
+    validations:  
       required: true
 
   - type: textarea
@@ -58,6 +63,7 @@ body:
       label: Impact on Business
       description: Describe the impact on the business.
       placeholder: "Describe the impact on business"
+    validations:  
       required: true
 
   - type: input
@@ -66,6 +72,7 @@ body:
       label: Expected Timeline
       description: Indicate the expected timeline for resolution.
       placeholder: "Enter the expected timeline"
+    validations:  
       required: true
 
   - type: textarea
@@ -74,6 +81,7 @@ body:
       label: Customer Details (Optional)
       description: Provide any additional details about the customer.
       placeholder: "Enter any additional customer details"
+    validations:  
       required: false
 
   - type: textarea
@@ -82,4 +90,5 @@ body:
       label: Any Other Related Info (Optional)
       description: Provide any other related information.
       placeholder: "Enter any other related information"
+    validations:  
       required: false
